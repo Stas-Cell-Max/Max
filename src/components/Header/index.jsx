@@ -39,7 +39,7 @@ useEffect(() => {
           alt="Profile"
           className="profile-image"
         />
-        <h2>Stanislav Morozan</h2>
+        <h2>MAXIDOM</h2>
         </div>
       </div>
 
@@ -72,7 +72,7 @@ useEffect(() => {
             handleNavClick("aboutme");
           }}
         >
-          About Me
+          About Us
         </Link>
         <Link
         activeClass="whatido"
@@ -87,7 +87,7 @@ useEffect(() => {
           handleNavClick("whatido");
         }}
         >
-          What I Do
+          What We Do
         </Link>
         <Link
        activeClass="resume"
@@ -132,7 +132,7 @@ useEffect(() => {
              handleNavClick("testimonial");
            }}
         >
-          Testimonial
+          Testimonials
         </Link>
         <Link
          activeClass="contact"

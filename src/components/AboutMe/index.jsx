@@ -14,7 +14,7 @@ const AboutMe = ({ }) => {
               "text-24   fw-600 w-100 mb-0 " 
             }
           >
-            Know Me More
+            Know Us More
           </h2>
           <p
             className={
@@ -27,7 +27,9 @@ const AboutMe = ({ }) => {
         </div>
      <div className="container">
       <p className="introduction">
-      Leveraging a solid foundation in architectural technology and a life-long commitment to learning, I am a Full Stack Web Developer known for blending problem-solving skills and creativity to develop user-friendly applications. With a track record of managing complex projects from conception through execution, I excel in delivering solutions that enhance user experience and functionality. Specializing in JavaScript, React, Node.js, and responsive design, I am passionate about adopting a mobile-first approach to meet and exceed project goals. Eager to contribute to a quality-driven team, aiming to innovate and elevate web experiences.
+      At Maxidom, we are dedicated to the art of fine carpentry, bringing timeless beauty and meticulous craftsmanship to every piece we create. Located in the vibrant city of Toronto, Maxidom was founded by a passionate artisan, committed to blending traditional techniques with contemporary design.
+
+With over a decade of hands-on experience, our founder embarked on this journey with a simple mission: to transform ordinary spaces into extraordinary living experiences through the power of skilled carpentry. Our work is driven by a deep love for woodwork and a desire to see the grain of every piece tell its own unique story.
       </p>
       <div className="personal-details">
         <p><strong>From:</strong> Toronto, Canada</p>
