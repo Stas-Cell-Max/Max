@@ -1,0 +1,262 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.portfolio-section {
+  padding: 4rem 0;
+  background-color: #343a40;
+  color: grey;
+}
+/* Portfolio Section Specifics */
+#portfolio {
+
+  color: grey;
+  padding: 50px 1;
+  min-height: 100vh; /* Ensure it covers minimum full viewport height */
+  overflow: hidden;   
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+  width: 100%;        /* Ensures container uses full width */
+  box-sizing: border-box; /* Makes sure padding and borders are included in the width */
+}
+/* Ensure portfolio items do not overflow their container */
+.portfolio-filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px; /* Adjust according to your layout */
+  justify-content: center; /* Centers items if they don't fill a full row */
+}
+.filter-item {
+  padding: 15px; /* Padding for spacing around items */
+  box-sizing: border-box; /* Include padding and border in the element's width */
+  width: calc(33.333% - 30px); /* Subtract double the padding */
+  transition: transform 0.5s ease;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-24 {
+  font-size: 2.5rem; /* Consistent font size for large texts */
+  font-weight: 600;
+  z-index: 2;
+}
+
+.text-9 {
+  font-size: 5.5rem; /* Adjusted for better scalability */
+  color: #282c30;
+}
+
+.heading-separator-line {
+  width: 60px;
+  height: 1px;
+  margin: 1rem auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mb-5 {
+  margin-bottom: 5px; /* Adjust margin for consistent spacing */
+}
+
+/* Filter Menu Styles */
+.filter-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.filter-menu li {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-bottom: 3px solid transparent;
+}
+
+.filter-menu li.active {
+  border-color: #007bff; /* Highlight active filter */
+}
+
+/* Portfolio Item Styles */
+.portfolio-box {
+  border: 1px solid #212529;
+  background: #212529;
+  position: relative;
+  margin-bottom: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.row {
+  --bs-gutter-x: 3.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-1.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.portfolio-box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+.portfolio-img {
+  width: 100%; /* Ensure it spans the full width */
+  height: 100%; /* Ensure it spans the full height */
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+  object-fit: cover; 
+  object-position: center;
+}
+
+.portfolio-box:hover .portfolio-img img {
+  opacity: 0.3;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(73, 67, 67, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-box:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay-details h5,
+.portfolio-overlay-details span {
+  color: #64ffd8; /* Light green color for details */
+  font-size: 1.2rem; /* Standard font size for overlay details */
+  margin: 0;
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+
+  .text-24 {
+    font-size: 1.7rem; /* Smaller font size on small screens */
+  }
+
+  .text-9 {
+    font-size: 3.3rem; /* Smaller title font size on small screens */
+  }
+
+  .heading-separator-line {
+    width: 50%; /* Full width line on smaller screens */
+  }
+
+  .filter-menu {
+    flex-direction: column; /* Stack filter options vertically on small screens */
+    align-items: center;
+  }
+
+  .filter-item {
+    width: 100%; /* Full width for filter items on small screens */
+    
+  }
+
+  .portfolio-box {
+    transition: none; /* Disable transitions on small devices for performance */
+  }
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+  
+  .text-24 {
+    font-size: 1.7rem; /* Smaller font size on small screens */
+  }
+  
+  .text-9 {
+    font-size: 3.3rem; /* Smaller title font size on small screens */
+  }
+  
+  .heading-separator-line {
+    width: 50%; /* Full width line on smaller screens */
+  }
+  
+  .portfolio-section .filter-menu, 
+  .portfolio-section ul { /* Adjust the container holding the nav-links */
+      flex-direction: column; /* Stack nav-links vertically */
+      align-items: center; /* Center-align items for aesthetic purposes */
+      width: 100%; /* Full width */
+      padding: 0;
+      text-decoration: none !important;
+      list-style-type: none; 
+  }
+
+  .portfolio-section .nav-link,
+  .portfolio-section li.nav-link { /* Increase specificity for nav-link and li */
+      width: 100%; /* Full width to utilize space */
+      margin: 5px 0; /* Reduced margin for compact spacing */
+      display: block; /* Block display to occupy full available width */
+      font-size: 1rem !important; /* Smaller font size */
+      padding: 1px 0; /* Adequate padding for touch targets */
+      text-decoration: none; /* Remove underlines */
+      border: none; /* In case borders are applied */
+      background: none; /* Clear any background styles */
+  }
+  .portfolio-section a.nav-link, /* Target <a> tags specifically if they are used */
+  .portfolio-section .nav-link a { /* Target <a> tags inside nav-link divs */
+      text-decoration: none; /* Ensure no underline */
+      color: inherit; /* Inherit text color from parent */
+  }
+  .portfolio-section .nav-link div { /* Further styling if nav-link uses inner div */
+    padding: 1px 0; /* Even smaller padding inside div */
+}
+  .filter-menu {
+    flex-direction: column; /* Stack filter options vertically on small screens */
+    align-items: center;
+  }
+  
+  .filter-item {
+    width: 100%; 
+    padding: 10px;
+    padding-top: 0%;
+  }
+  
+  .portfolio-box {
+    transition: none; /* Disable transitions on small devices for performance */
+  }
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
