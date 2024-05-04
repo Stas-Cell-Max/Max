@@ -21,7 +21,7 @@ const AboutMe = ({ }) => {
               "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " 
             }
           >
-            ABOUT ME
+            ABOUT US
             <span className="heading-separator-line  d-block mx-auto" />
           </p>
         </div>
