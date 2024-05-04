@@ -10,7 +10,7 @@ const WhatIDo = () => {
             className={"text-24 fw-600 w-100 mb-0 " 
             }
           >
-            What I Do
+            What We Do
           </h2>
           <p
             className={
@@ -35,7 +35,7 @@ const WhatIDo = () => {
           </div>
           </div>
 
-          {/* Web Design */}
+          {/* Crown Moulding*/}
           <div className="col-md-4">
             <span className="fa-stack fa-4x">
               <i className="fas fa-stack-2x text-primary"></i>
@@ -46,7 +46,7 @@ const WhatIDo = () => {
             <p className="text-muted">Designing engaging and user-focused web experiences.</p>
           </div>
          </div>
-          {/* Architectural Technology */}
+          {/* Wainscoting*/}
           <div className="col-md-4">
             <span className="fa-stack fa-4x">
               <i className="fas  fa-stack-2x text-primary"></i>
@@ -58,7 +58,7 @@ const WhatIDo = () => {
           </div>
           </div>
 
-          {/* Architectural Design */}
+          {/* Wall Paneling */}
           <div className="col-md-4">
             <span className="fa-stack fa-4x">
               <i className="fas fa-stack-2x text-primary"></i>
@@ -66,6 +66,40 @@ const WhatIDo = () => {
             </span>
             <div className="service-content">
             <h4 className="service-heading"> <strong>Wall Paneling</strong></h4>
+            <p className="text-muted">Creating eco-friendly and sustainable architectural solutions.</p>
+          </div>
+          </div>
+           {/* Cabinetry Installation*/}
+           <div className="col-md-4">
+            <span className="fa-stack fa-4x">
+              <i className="fas fa-stack-2x text-primary"></i>
+              <i className="fas fa-couch fa-stack-1x fa-inverse"></i>
+            </span>
+            <div className="service-content">
+            <h4 className="service-heading"> <strong>Cabinetry Installation</strong></h4>
+            <p className="text-muted">Designing engaging and user-focused web experiences.</p>
+          </div>
+         </div>
+          {/* Stairs*/}
+          <div className="col-md-4">
+            <span className="fa-stack fa-4x">
+              <i className="fas  fa-stack-2x text-primary"></i>
+              <i className="fas fa-stairs fa-stack-1x fa-inverse"></i>
+            </span>
+            <div className="service-content">
+            <h4 className="service-heading"> <strong> Stairs Recap</strong></h4>
+            <p className="text-muted">Integrating technology into building design and architecture.</p>
+          </div>
+          </div>
+
+          {/* Flooring Installation */}
+          <div className="col-md-4">
+            <span className="fa-stack fa-4x">
+              <i className="fas fa-stack-2x text-primary"></i>
+              <i className="fas fa-light fa-ruler-combined fa-stack-1x fa-inverse"></i>
+            </span>
+            <div className="service-content">
+            <h4 className="service-heading"> <strong>Flooring Installation</strong></h4>
             <p className="text-muted">Creating eco-friendly and sustainable architectural solutions.</p>
           </div>
           </div>
