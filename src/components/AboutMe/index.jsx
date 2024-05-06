@@ -33,7 +33,7 @@ With over a decade of hands-on experience, our founder embarked on this journey 
       </p>
       <div className="personal-details">
         <p><strong>From:</strong> Toronto, Canada</p>
-        <p><strong>Skills:</strong> JavaScript, React, Node.js, MongoDB ,Architectural Design</p>
+        <p><strong>Skills:</strong> Hard-Skills, Soft-Skills ,Architectural Design</p>
         <p><strong>Hobbies:</strong> Driving, Woodworking, Urban Exploration</p>
       </div>
     </div>

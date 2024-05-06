@@ -54,7 +54,7 @@
     font-size: 2rem;
 
     border-radius: 12px; /* Rounded corners for the button */
-    background-color: #377a7d; /* Bootstrap primary color */
+    background-color: #dd9624; /* Bootstrap primary color */
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -62,11 +62,11 @@
   }
   
 .btn-primary:hover {
-    background-color: #377a7d; /* A darker shade for hover state */
+    background-color:  #dd9624; /* A darker shade for hover state */
   }
   .btn-outline-secondary:hover {
     color: #fff;
-    background-color: #5ca895;
+    background-color:  #dd9624;
     border-color: #303238 !important;
   }
 
