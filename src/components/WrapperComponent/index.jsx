@@ -15,6 +15,12 @@ const WrapperComponent = ({handleNavClick}) => {
   return (
     // <div className="vh-100 ">
   <div className="wrapper-component">
+     <div className="grid-overlay">
+        <div className="grid-overlay__col"><div className="grid-overlay__line"></div></div>
+        <div className="grid-overlay__col"><div className="grid-overlay__line"></div></div>
+        <div className="grid-overlay__col"><div className="grid-overlay__line"></div></div>
+        <div className="grid-overlay__col"><div className="grid-overlay__line"></div></div>
+      </div>
             <Element name="home"  id="home"><Home handleNavClick={handleNavClick} /></Element>
             <Element name="aboutme" style={{height: '100%'}}  id="aboutme"><AboutMe handleNavClick={handleNavClick} /></Element>
             <Element name="whatido"   id="whatido"><WhatIDo handleNavClick={handleNavClick} /></Element>

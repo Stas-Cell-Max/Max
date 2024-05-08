@@ -8,6 +8,8 @@
   min-height: auto;
 }
 
+
+
 .about-me {
   min-height: auto; /* Allows the component to grow with content */
 }
@@ -18,7 +20,6 @@
   padding: 5px 15px;
   
 }
-
 
 .text-center {
   margin-top: 5px;
@@ -47,7 +48,6 @@
 .text-dark {
   color: #5c6772;
 }
-
 
 .heading-separator-line {
   width: 60px;

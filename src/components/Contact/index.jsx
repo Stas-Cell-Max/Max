@@ -58,7 +58,7 @@ const Contact = ({  }) => {
               "text-24 fw-600 w-100 mb-0 " 
             }
           >
-            Get in Touch
+            Let’s get Started
           </h2>
           <p
             className={
